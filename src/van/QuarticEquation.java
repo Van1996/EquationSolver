@@ -122,6 +122,7 @@ public class QuarticEquation {
 				return (sQ + Q / sQ) - an;
 			else
 				return -(sQ + Q / sQ) - an;
+			
 		}
 	}
 
