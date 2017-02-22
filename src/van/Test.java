@@ -10,12 +10,12 @@ import java.util.Random;
 
 public class Test {
 
-	private final static int TEST_TIMES = 10000;
-	private final static double ERROR_MARGIN = 1E-4;
+	private final static int TEST_TIMES = 1000000;
+	private final static double ERROR_MARGIN = 1E-10;
 
 	public static void main(String[] args) {
 		test(3);
-		test(4);
+//		test(4);
 	}
 
 	static void test(int power) {

@@ -9,16 +9,19 @@ public class QuadraticEquation {
 	
 	/**
 	 * Solve a Quadratic equation of the form ax^2+bx+c=0.
-	 * If a == 0,return null
+	 * If there is not a real root ,return null
 	 * @param a	coefficient of x^2
 	 * @param b coefficient of x^1
 	 * @param c coefficient of x^0
-	 * @return the root of the equation
+	 * @return the root of the equation,or null if the equation do not have a real root  
 	 */
 	public static double[] solve(double a, double b, double c) {
 		if (a == 0 && b != 0) {
 			double[] solution = {-c/b};
 			return solution;
+		}
+		if (a == 0 && b == 0) {
+			return null;
 		}
 		
 		double delta = getDelta(a, b, c);
