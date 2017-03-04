@@ -14,7 +14,11 @@ public class Test {
 	private final static double ERROR_MARGIN = 1E-10;
 
 	public static void main(String[] args) {
-		test(3);
+		String a = "abc";
+		String b = "abc";
+		System.out.println(a + b);
+		
+//		test(3);
 //		test(4);
 	}
 
